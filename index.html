@@ -23,13 +23,14 @@
        canvas.style.background = "#333";
 
        var ctx = canvas.getContext("2d");
-       var game = 
+       var game = new Asteroids.Game();
+       new Asteroids.gameView(game, ctx).start();
     </script>
 
 
-    <script type="application/javascript">
+    <!-- <script type="application/javascript">
       window.Asteroids.gameView.start();
-    </script>
+    </script> -->
 
   </body>
 </html>
