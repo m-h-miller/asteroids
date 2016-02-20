@@ -20,17 +20,11 @@
        canvas = document.getElementsByTagName("canvas")[0];
        canvas.height = 525;
        canvas.width = 800;
-       canvas.style.background = "#333";
+       canvas.style.background = "#000";
 
        var ctx = canvas.getContext("2d");
        var game = new Asteroids.Game();
        new Asteroids.gameView(game, ctx).start();
     </script>
-
-
-    <!-- <script type="application/javascript">
-      window.Asteroids.gameView.start();
-    </script> -->
-
   </body>
 </html>
